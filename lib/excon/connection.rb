@@ -172,7 +172,7 @@ module Excon
           # start with "METHOD /path"
           request = params[:method].to_s.upcase << ' '
           if @proxy
-            request << params[:scheme] << '://' << params[:host] << ':' << params[:port]
+            #request << params[:scheme] << '://' << params[:host] << ':' << params[:port]
           end
           request << params[:path]
 
